@@ -18,6 +18,9 @@ bundle exec jekyll serve
 
 - **Repositorio**: [GitHub](https://github.com/denis-tintumapp/tintum-app)
 - **Documentación**: Ver carpeta `docs/`
+- **Firebase Console**: https://console.firebase.google.com/project/tintum-web/overview
+- **Hosting URL**: https://tintum-web.web.app
+- **Dominio Personalizado**: https://tintum.app (ver [guía de configuración](docs/configurar-dominio-personalizado.md))
 
 ## Configuración
 
@@ -76,8 +79,18 @@ Para probar localmente con Firebase Emulator:
 firebase emulators:start
 ```
 
+## Configurar Dominio Personalizado
+
+Para configurar `tintum.app` como dominio personalizado, consulta la [guía completa](docs/configurar-dominio-personalizado.md).
+
+Verificar configuración DNS:
+```bash
+./configurar-dominio.sh
+```
+
 ## Notas
 
 - Asegúrate de estar autenticado con la cuenta correcta: `denis@tintum.app`
 - Verifica la configuración del proyecto en Firebase Console
+- El dominio personalizado `tintum.app` requiere registros A y AAAA (no CNAME) en Namecheap
 

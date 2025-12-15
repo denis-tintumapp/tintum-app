@@ -47,6 +47,8 @@ tintum-app/
 - [Configuración Inicial]({{ '/configuracion-inicial' | relative_url }})
 - [Despliegue]({{ '/despliegue' | relative_url }})
 - [Desarrollo]({{ '/desarrollo' | relative_url }})
+- [Configurar Dominio Personalizado]({{ '/configurar-dominio-personalizado' | relative_url }})
+- [Estado de Firebase]({{ '/estado-firebase' | relative_url }})
 {% endif %}
 
 ## Última Actualización
