@@ -1,0 +1,17 @@
+{% comment %}
+  Header template para la documentación
+  Variables disponibles:
+  - page.title: Título de la página
+  - site.title: Título del sitio
+{% endcomment %}
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title">
+      <a href="{{ '/' | relative_url }}">{{ site.title | default: 'Tintum.app' }}</a>
+    </h1>
+    {% if page.title %}
+    <h2 class="page-title">{{ page.title }}</h2>
+    {% endif %}
+  </div>
+</header>
+

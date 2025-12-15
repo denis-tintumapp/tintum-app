@@ -1,0 +1,24 @@
+# Configuración Jekyll para documentación
+title: Tintum.app
+description: Documentación del proyecto web de Tintum.app
+baseurl: ""
+url: "https://tintum.app"
+
+# Configuración de Liquid
+liquid:
+  error_mode: strict
+  strict_filters: true
+  strict_variables: true
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Excluir archivos
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+

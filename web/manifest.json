@@ -1,0 +1,28 @@
+{
+  "name": "Tintum.app",
+  "short_name": "Tintum",
+  "description": "Aplicación web de Tintum.app",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#4a148c",
+  "theme_color": "#4a148c",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
