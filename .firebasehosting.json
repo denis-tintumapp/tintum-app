@@ -1,13 +1,11 @@
 {
   "targets": {
     "tintum-web": "tintum-web",
-    "tintum-redirect": "tintum-redirect",
-    "www-redirect": "www-redirect"
+    "tintum-redirect": "tintum-redirect"
   },
   "sites": {
     "tintum-web": "hello.tintum.app",
-    "tintum-redirect": "tintum.app",
-    "www-redirect": "www.tintum.app"
+    "tintum-redirect": "tintum.app"
   }
 }
 

@@ -59,22 +59,6 @@
         }
       ]
     },
-    {
-      "target": "www-redirect",
-      "public": "web",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
-      "redirects": [
-        {
-          "source": "**",
-          "destination": "https://hello.tintum.app",
-          "type": 301
-        }
-      ]
-    }
   ],
   "firestore": {
     "rules": "firestore.rules",
