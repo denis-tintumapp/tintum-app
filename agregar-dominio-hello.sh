@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Script para agregar el dominio hello.tintum.app al sitio tintum-web
+# Este script te guiará paso a paso
+
+echo "🚀 Guía para agregar hello.tintum.app a Firebase Hosting"
+echo ""
+echo "Proyecto: tintum-web"
+echo "Sitio: tintum-web"
+echo "Dominio: hello.tintum.app"
+echo ""
+echo "📋 Pasos a seguir:"
+echo ""
+echo "1. Abre Firebase Console:"
+echo "   https://console.firebase.google.com/project/tintum-web/hosting"
+echo ""
+echo "2. Selecciona el sitio 'tintum-web'"
+echo ""
+echo "3. Haz clic en 'Add custom domain' o 'Agregar dominio personalizado'"
+echo ""
+echo "4. Ingresa: hello.tintum.app"
+echo ""
+echo "5. Firebase te mostrará las instrucciones para configurar DNS"
+echo ""
+echo "6. Configura en Namecheap:"
+echo "   Type: CNAME"
+echo "   Host: hello"
+echo "   Value: tintum-web.web.app"
+echo "   TTL: Automatic"
+echo ""
+echo "7. Espera 15-30 minutos para la propagación DNS"
+echo ""
+echo "8. Firebase verificará y configurará SSL automáticamente (1-2 horas)"
+echo ""
+echo "✅ Una vez completado, ejecuta:"
+echo "   firebase deploy --only hosting:tintum-web"
+echo ""
+

@@ -5,7 +5,7 @@
   },
   "sites": {
     "tintum-web": "hello.tintum.app",
-    "tintum-redirect": "tintum.app"
+    "tintum-redirect": ["tintum.app", "www.tintum.app"]
   }
 }
 

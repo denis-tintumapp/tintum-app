@@ -1,6 +1,18 @@
 {
   "projects": {
     "default": "tintum-web"
-  }
+  },
+  "targets": {
+    "tintum-web": {
+      "hosting": {
+        "tintum-web": [
+          "tintum-web"
+        ],
+        "tintum-redirect": [
+          "tintum-redirect"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
-
