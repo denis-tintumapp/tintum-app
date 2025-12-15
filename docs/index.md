@@ -48,6 +48,7 @@ tintum-app/
 - [Despliegue]({{ '/despliegue' | relative_url }})
 - [Desarrollo]({{ '/desarrollo' | relative_url }})
 - [Configurar Dominio Personalizado]({{ '/configurar-dominio-personalizado' | relative_url }})
+- [SSL con Let's Encrypt y Redirecciones]({{ '/configuracion-ssl-redirecciones' | relative_url }})
 - [Estado de Firebase]({{ '/estado-firebase' | relative_url }})
 {% endif %}
 
