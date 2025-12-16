@@ -177,30 +177,47 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
   animation: fadeInUp 0.8s ease 0.1s both;
   flex-wrap: wrap;
 }
 
 .hero-logo-image {
   width: auto;
-  height: clamp(60px, 8vw, 100px);
+  height: clamp(120px, 15vw, 180px);
   display: block;
   background: transparent;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4)) 
+          drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
   flex-shrink: 0;
+  animation: logoFloat 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.hero-logo-image:hover {
+  transform: scale(1.05);
+}
+
+@keyframes logoFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .hero-title {
   font-family: 'Dancing Script', cursive;
-  font-size: clamp(3.5rem, 7vw, 6rem);
+  font-size: clamp(3rem, 6vw, 5.5rem);
   font-weight: 700;
   margin: 0;
   letter-spacing: 0.02em;
   line-height: 1.1;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   white-space: nowrap;
+  align-self: center;
 }
 
 .hero-subtitle {
@@ -504,12 +521,12 @@ section {
   }
 
   .hero-brand {
-    gap: 1rem;
+    gap: 1.5rem;
     flex-direction: column;
   }
 
   .hero-logo-image {
-    height: clamp(50px, 10vw, 80px);
+    height: clamp(100px, 20vw, 140px);
   }
 
   .hero-title {
