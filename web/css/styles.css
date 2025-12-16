@@ -22,11 +22,16 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, 'Inter', 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.6;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
   color: var(--text-color);
   background-color: var(--bg-color);
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .container {
@@ -62,6 +67,8 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
   transition: var(--transition);
   position: relative;
 }
@@ -167,16 +174,21 @@ body {
 }
 
 .hero-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
   animation: fadeInUp 0.8s ease;
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+  opacity: 0.95;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
   animation: fadeInUp 0.8s ease 0.2s both;
 }
 
@@ -190,14 +202,16 @@ body {
 /* Buttons */
 .btn {
   display: inline-block;
-  padding: 0.75rem 2rem;
-  border-radius: 5px;
+  padding: 0.875rem 2.25rem;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
   transition: var(--transition);
   border: none;
   cursor: pointer;
-  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .btn-primary {
@@ -287,10 +301,12 @@ section {
 }
 
 .about-text {
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 1.125rem;
+  line-height: 1.75;
   color: var(--text-light);
   margin-bottom: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 /* Contact */
@@ -313,7 +329,9 @@ section {
 }
 
 .contact-info p {
-  font-size: 1.1rem;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  font-weight: 400;
 }
 
 .contact-info a {
@@ -339,7 +357,11 @@ section {
 
 .form-group label {
   font-weight: 600;
+  font-size: 0.95rem;
   color: var(--text-color);
+  letter-spacing: 0.01em;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 .form-group input,
@@ -461,11 +483,11 @@ section {
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: clamp(2rem, 6vw, 2.5rem);
   }
 
   .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: clamp(1.125rem, 3vw, 1.375rem);
   }
 
   .hero-actions {
