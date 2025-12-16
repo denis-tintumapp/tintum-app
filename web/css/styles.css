@@ -173,30 +173,34 @@ body {
   margin: 0 auto;
 }
 
-.hero-logo {
+.hero-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
   margin-bottom: 2rem;
   animation: fadeInUp 0.8s ease 0.1s both;
+  flex-wrap: wrap;
 }
 
-.logo-image {
-  max-width: 200px;
+.hero-logo-image {
   width: auto;
-  height: auto;
+  height: clamp(60px, 8vw, 100px);
   display: block;
-  margin: 0 auto;
   background: transparent;
   filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+  flex-shrink: 0;
 }
 
 .hero-title {
   font-family: 'Dancing Script', cursive;
   font-size: clamp(3.5rem, 7vw, 6rem);
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin: 0;
   letter-spacing: 0.02em;
   line-height: 1.1;
-  animation: fadeInUp 0.8s ease 0.2s both;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
 }
 
 .hero-subtitle {
@@ -499,12 +503,18 @@ section {
     display: block;
   }
 
-  .hero-logo .logo-image {
-    max-width: 150px;
+  .hero-brand {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .hero-logo-image {
+    height: clamp(50px, 10vw, 80px);
   }
 
   .hero-title {
-    font-size: clamp(3rem, 8vw, 4.5rem);
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    white-space: normal;
   }
 
   .hero-subtitle {
