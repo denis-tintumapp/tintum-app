@@ -189,12 +189,14 @@ body {
 }
 
 .hero-title {
-  font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 800;
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(3.5rem, 7vw, 6rem);
+  font-weight: 700;
   margin-bottom: 1.5rem;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.02em;
   line-height: 1.1;
   animation: fadeInUp 0.8s ease 0.2s both;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero-subtitle {
@@ -502,7 +504,7 @@ section {
   }
 
   .hero-title {
-    font-size: clamp(2.5rem, 7vw, 3.5rem);
+    font-size: clamp(3rem, 8vw, 4.5rem);
   }
 
   .hero-subtitle {
