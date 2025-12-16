@@ -354,6 +354,54 @@ section {
   margin-right: auto;
 }
 
+.about-quote {
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  padding: 0;
+  border: none;
+  position: relative;
+}
+
+.about-quote:last-child {
+  margin-bottom: 0;
+}
+
+.about-quote p {
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  line-height: 1.7;
+  color: var(--text-color);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  position: relative;
+  padding: 0 2rem;
+  margin: 0;
+}
+
+.about-quote p::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  top: -0.5rem;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--primary-color);
+  opacity: 0.3;
+  font-family: 'Dancing Script', cursive;
+}
+
+.about-quote p::after {
+  content: '"';
+  position: absolute;
+  right: 0;
+  bottom: -1.5rem;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--primary-color);
+  opacity: 0.3;
+  font-family: 'Dancing Script', cursive;
+}
+
 /* Contact */
 .contact {
   background-color: var(--bg-light);
@@ -586,6 +634,20 @@ section {
 
   .section-title {
     font-size: 2rem;
+  }
+
+  .about-quote {
+    margin-bottom: 2rem;
+  }
+
+  .about-quote p {
+    font-size: clamp(1.1rem, 3vw, 1.35rem);
+    padding: 0 1.5rem;
+  }
+
+  .about-quote p::before,
+  .about-quote p::after {
+    font-size: 3rem;
   }
 
   .contact-content {
